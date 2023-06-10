@@ -1,6 +1,6 @@
-from edf_test_technique.src.EnergyStorageSystem import EnergyStorageSystem
-from edf_test_technique.src.PhotovoltaicPowerPlant import PhotovoltaicPowerPlant
-from edf_test_technique.src.PointOfConnection import PointOfConnection
+from edf_test_technique.src.entities.EnergyStorageSystem import EnergyStorageSystem
+from edf_test_technique.src.entities.PhotovoltaicPowerPlant import PhotovoltaicPowerPlant
+from edf_test_technique.src.entities.PointOfConnection import PointOfConnection
 
 
 class Grid:
