@@ -6,8 +6,14 @@ class PointOfConnection:
     Class responsible for providing measures to control the flow of power
     going in/out of the point of control in the grid.
 
+    Attributes
+    ----------
+    pmaxsite : int
+        Maximum power consumption allowed on the industrial site.
+    ppoc : int
+        Actual power flowing in/out of the local smart grid.
     """
-    def __init__(self, pmaxsite: int):
+    def __init__(self, pmaxsite: int) -> None:
         self._pmaxsite = pmaxsite 
         self._ppoc = None
 
@@ -21,7 +27,7 @@ class PointOfConnection:
 
     def setPpoc(self, ppoc: int) -> int:
         """
-        Get a measure of the power flowing in/out of the grid (in kW).
+        Get a measure of the power flowing in/out of the local smart grid (in kW).
         """
         if ppoc > self.pmaxsite:
             raise POCMaxSiteChargeReachedError(pmaxsite=self.pmaxsite)

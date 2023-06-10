@@ -27,7 +27,7 @@ class EnergyStorageSystem:
     ess_capacity : int
         Maximum storage capacity of the ESS (in kWh).
     """
-    def __init__(self, eess: int, ess_capacity: int):
+    def __init__(self, eess: int, ess_capacity: int) -> None:
         if eess < 0:
             raise ESSMinimumEessStockError
         self._eess = eess # kWh

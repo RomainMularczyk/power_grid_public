@@ -1,7 +1,10 @@
-from .errors.PvChargeError import PVMinimumChargeError
+from edf_test_technique.src.errors.PvChargeError import PVMinimumChargeError
 
 class PhotovoltaicPowerPlant:
     """
+    Class responsible for providing measures to evaluate the power production
+    of the photovoltaic power plant.
+
     Attributes
     ----------
     ppv : int
