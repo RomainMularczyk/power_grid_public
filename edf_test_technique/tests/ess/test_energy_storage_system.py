@@ -17,16 +17,6 @@ def ess():
     )
     return ess
 
-@pytest.fixture
-def ess_wrong_values():
-    with pytest.raises(ESSMinimumEessStockError):
-        ess = EnergyStorageSystem(
-            eess=-1_000,
-            ess_capacity=-10_000
-        )
-    return ess
-
-
 def test_create_ess(ess):
     """
     Verify that an instance of EnergyStorageSystem is properly created
