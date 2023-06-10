@@ -1,5 +1,5 @@
 import pytest
-from edf_test_technique.src.PhotovoltaicPowerPlant import PhotovoltaicPowerPlant
+from edf_test_technique.src.entities.PhotovoltaicPowerPlant import PhotovoltaicPowerPlant
 from edf_test_technique.src.errors.PvChargeError import PVMinimumChargeError
 
 def test_pv_with_negative_power():

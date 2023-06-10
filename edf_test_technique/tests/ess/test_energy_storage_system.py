@@ -1,9 +1,9 @@
 import pytest
+from edf_test_technique.src.entities.EnergyStorageSystem import EnergyStorageSystem
 from edf_test_technique.src.errors.EssStockError import (
     ESSMinimumEssCapacityError,
     ESSMinimumEessStockError
 )
-from edf_test_technique.src.EnergyStorageSystem import EnergyStorageSystem
 from edf_test_technique.src.errors.EssChargeError import ( 
     ESSMaximumDischargeReachedError, 
     ESSMaximumChargeReachedError,

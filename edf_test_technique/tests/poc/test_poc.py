@@ -1,5 +1,5 @@
 import pytest
-from edf_test_technique.src.PointOfConnection import PointOfConnection
+from edf_test_technique.src.entities.PointOfConnection import PointOfConnection
 from edf_test_technique.src.errors.PocChargeError import POCMaxSiteChargeReachedError
 
 
