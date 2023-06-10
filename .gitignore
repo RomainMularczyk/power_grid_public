@@ -1,0 +1,8 @@
+# Misc
+.DS_Store
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# Pycache
+*__pycache__/
