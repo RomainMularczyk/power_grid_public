@@ -4,5 +4,8 @@
 # Notebooks
 *.ipynb_checkpoints/
 
+# Docs
+docs/
+
 # Pycache
 *__pycache__/
